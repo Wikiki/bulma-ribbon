@@ -7,7 +7,7 @@ Preview
 
 Usage
 ---
-```
+```html
 <div class="box has-ribbon">
   <div class="ribbon">Up to date</div>
   Box content
