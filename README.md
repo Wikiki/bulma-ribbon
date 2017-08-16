@@ -79,6 +79,8 @@ You can use standards color modifiers and you can change the ribbon's position u
 - has-ribbon-left
 - has-ribbon-bottom
 
+You can use the ```is-outlined``` modifier to remove background and just keep the border of the ribbon
+
 Variables
 ---
 This extension uses the following variables
@@ -87,7 +89,7 @@ Name | Description | Default value
 -----|-------------|---------------
 $ribbon-color | Default ribbon text color | $grey-darker
 $ribbon-background-color | Default background color of the ribbon | $white
-$ribbon-border-color | Ribbon default border color | $grey-lighter
+$ribbon-border | Ribbon default border color | .1rem solid $grey-lighter
 
 Demo
 ---
