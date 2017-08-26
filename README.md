@@ -1,6 +1,6 @@
 # bulma-ribbon
 Bulma's extension to show a ribbon on boxes
-(find all my bulma's extensions [here](https://wikiki.github.io/bulma-extensions))
+(find all my bulma's extensions [here](https://wikiki.github.io/bulma-extensions/overview))
 
 ![Ribbon Element](https://img4.hostingpics.net/pics/737717ScreenShot20170810at095724.png)
 
