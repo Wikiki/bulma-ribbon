@@ -1,0 +1,25 @@
+{
+  "name": "bulma-ribbon",
+  "version": "0.0.1",
+  "description": "Display a ribbon on bulma element",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wikiki/bulma-ribbon.git"
+  },
+  "keywords": [
+    "Bulma",
+    "bulma",
+    "bulma.io",
+    "extensions"
+  ],
+  "author": "Wikiki <wikiki@protonmail.com> (https://wikiki.github.io/bulma-extensions/overview)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wikiki/bulma-ribbon/issues"
+  },
+  "homepage": "https://github.com/Wikiki/bulma-ribbon#readme"
+}
