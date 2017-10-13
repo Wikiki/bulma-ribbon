@@ -2,6 +2,9 @@
 Bulma's extension to show a ribbon on boxes
 (find all my bulma's extensions [here](https://wikiki.github.io/bulma-extensions/overview))
 
+[![Build Status](https://travis-ci.org/Wikiki/bulma-ribbon.svg?branch=master)](https://travis-ci.org/Wikiki/bulma-ribbon)
+
+
 ![Ribbon Element](https://img4.hostingpics.net/pics/737717ScreenShot20170810at095724.png)
 
 Usage
