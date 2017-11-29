@@ -1,8 +1,8 @@
 {
   "name": "bulma-ribbon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Display a ribbon on bulma element",
-  "main": "index.js",
+  "main": "ribbon.sass",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +21,15 @@
   "bugs": {
     "url": "https://github.com/Wikiki/bulma-ribbon/issues"
   },
-  "homepage": "https://github.com/Wikiki/bulma-ribbon#readme"
+  "homepage": "https://github.com/Wikiki/bulma-ribbon#readme",
+  "devDependencies": {
+    "bulma": "^0.6.1"
+  },
+  "files": [
+    "ribbon.sass",
+    "ribbon.css",
+    "ribbon.min.css",
+    "LICENSE",
+    "README.md"
+  ]
 }
