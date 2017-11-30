@@ -1,6 +1,6 @@
 # bulma-ribbon
 Bulma's extension to show a ribbon on boxes
-(find all my bulma's extensions [here](https://wikiki.github.io/bulma-extensions/overview))
+(find all my bulma's extensions [here](https://wikiki.github.io/))
 
 [![npm](https://img.shields.io/npm/v/bulma-ribbon.svg)](https://www.npmjs.com/package/bulma-ribbon)
 [![npm](https://img.shields.io/npm/dm/bulma-ribbon.svg)](https://www.npmjs.com/package/bulma-ribbon)
