@@ -1,0 +1,23 @@
+{
+  "name": "bulma-ribbon",
+  "description": "Display a ribbon on bulma element",
+  "main": "ribbon.sass",
+  "authors": [
+    "Wikiki <wikiki@protonmail.com> (https://wikiki.github.io/bulma-extensions/overview)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Bulma",
+    "bulma",
+    "bulma.io",
+    "extensions"
+  ],
+  "homepage": "https://github.com/Wikiki/bulma-ribbon",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
