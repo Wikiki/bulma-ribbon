@@ -141,11 +141,9 @@ gulp.task('default', ['build']);
  * ----------------------------------------
  */
 gulp.task('changelog', function () {
-  return gulp.src('CHANGELOG.md', {
-    buffer: false
-  })
+  return gulp.src('CHANGELOG.md')
     .pipe(conventionalChangelog({
-      preset: 'angular' // Or to any other commit message convention you use.
+      preset: 'angular'
     }))
     .pipe(gulp.dest('./'));
 });
@@ -160,7 +158,7 @@ gulp.task('github-release', function(done) {
     type: "oauth",
     token: process.env.GITHUB_TOKEN
   }, {
-    preset: 'angular' // Or to any other commit message convention you use.
+    preset: 'angular'
   }, done);
 });
 
