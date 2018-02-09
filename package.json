@@ -1,6 +1,6 @@
 {
   "name": "bulma-ribbon",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Display a ribbon on bulma element",
   "main": "ribbon.sass",
   "scripts": {

@@ -2,7 +2,7 @@
   "name": "bulma-ribbon",
   "description": "Display a ribbon on bulma element",
   "main": "ribbon.sass",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "authors": [
     "Wikiki <wikiki@protonmail.com> (https://wikiki.github.io/bulma-extensions/overview)"
   ],
