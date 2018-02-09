@@ -11,7 +11,6 @@ var conventionalChangelog       = require('gulp-conventional-changelog');
 var conventionalGithubReleaser  = require('conventional-github-releaser');
 var del                         = require('del');
 var fs                          = require('fs');
-var gulp                        = require('gulp');
 var git                         = require('gulp-git');
 var gutil                       = require('gulp-util');
 var postcss                     = require('gulp-postcss');
@@ -32,7 +31,7 @@ var paths = {
   jsPattern: '**/*.js'
 }
 var globalSassFile = package.name + '.sass';
-var globalJsFile = package.name + '.sass';
+var globalJsFile   = package.name + '.sass';
 var bulmaSassFile  = '_all.sass';
 var mainSassFile   = 'extension.sass';
 var distCssFile    = package.name + '.min.css';
