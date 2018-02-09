@@ -17,6 +17,7 @@ var gutil                       = require('gulp-util');
 var postcss                     = require('gulp-postcss');
 var runSequence                 = require('run-sequence');
 var sass                        = require('gulp-sass');
+var spawn                       = require('child_process').spawn;
 var uglify                      = require('gulp-uglify');
 
 /**
@@ -153,7 +154,7 @@ gulp.task('changelog', function () {
  *  GENERATE GITHUB RELEASE
  * ----------------------------------------
  */
-gulp.task('github-release', function(done) {
+gulp.task('github:release', function(done) {
   conventionalGithubReleaser({
     type: "oauth",
     token: process.env.GITHUB_TOKEN
@@ -175,17 +176,17 @@ gulp.task('bump-version', function () {
 });
 
 
-gulp.task('commit-changes', function () {
+gulp.task('github:commit', function () {
   return gulp.src('.')
     .pipe(git.add())
     .pipe(git.commit('[Prerelease] Bumped version number'));
 });
 
-gulp.task('push-changes', function (cb) {
+gulp.task('github:push', function (cb) {
   git.push('origin', 'master', cb);
 });
 
-gulp.task('create-new-tag', function (cb) {
+gulp.task('github:create-new-tag', function (cb) {
   var version = getPackageJsonVersion();
   git.tag(version, 'Created Tag for version: ' + version, function (error) {
     if (error) {
@@ -201,14 +202,19 @@ gulp.task('create-new-tag', function (cb) {
   };
 });
 
+gulp.task('npm:publish', function (done) {
+  spawn('npm', ['publish'], { stdio: 'inherit' }).on('close', done);
+});
+
 gulp.task('release', function (callback) {
   runSequence(
     'bump-version',
     'changelog',
-    'commit-changes',
-    'push-changes',
-    'create-new-tag',
-    'github-release',
+    'github:commit',
+    'github:push',
+    'github:create-new-tag',
+    'github:release',
+    'npm:publish',
     function (error) {
       if (error) {
         console.log(error.message);
