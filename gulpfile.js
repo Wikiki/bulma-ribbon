@@ -207,6 +207,7 @@ gulp.task('npm:publish', function (done) {
 
 gulp.task('release', function (callback) {
   runSequence(
+    'build',
     'bump-version',
     'changelog',
     'github:commit',
