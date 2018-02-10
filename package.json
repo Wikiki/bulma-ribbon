@@ -2,7 +2,7 @@
   "name": "bulma-ribbon",
   "version": "0.0.10",
   "description": "Display a ribbon on bulma element",
-  "main": "ribbon.sass",
+  "main": "dist/bulma-ribbon.sass",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -47,7 +47,7 @@
     "run-sequence": "^2.2.1"
   },
   "files": [
-    "dist/ribbon.sass",
+    "dist/bulma-ribbon.sass",
     "dist/bulma-ribbon.min.css",
     "LICENSE",
     "README.md"
