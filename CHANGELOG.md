@@ -1,3 +1,13 @@
+<a name="0.0.13"></a>
+## [0.0.13](https://github.com/Wikiki/bulma-ribbon/compare/0.0.12...0.0.13) (2018-02-10)
+
+
+### Bug Fixes
+
+* **gulp:** Use UMD modules style ([8a0bbb8](https://github.com/Wikiki/bulma-ribbon/commit/8a0bbb8))
+
+
+
 <a name="0.0.12"></a>
 ## [0.0.12](https://github.com/Wikiki/bulma-ribbon/compare/0.0.10...0.0.12) (2018-02-10)
 
