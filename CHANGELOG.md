@@ -1,3 +1,8 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/Wikiki/bulma-ribbon/compare/0.0.14...1.0.0) (2018-02-10)
+
+
+
 <a name="0.0.14"></a>
 ## [0.0.14](https://github.com/Wikiki/bulma-ribbon/compare/0.0.13...0.0.14) (2018-02-10)
 
