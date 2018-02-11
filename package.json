@@ -1,6 +1,6 @@
 {
   "name": "bulma-ribbon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Display a ribbon on bulma element",
   "main": "dist/bulma-ribbon.sass",
   "scripts": {
