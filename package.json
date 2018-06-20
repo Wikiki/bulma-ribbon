@@ -26,6 +26,9 @@
   },
   "homepage": "https://github.com/Wikiki/bulma-ribbon#readme",
   "devDependencies": {
+    "@semantic-release/changelog": "^2.0.2",
+    "@semantic-release/git": "^5.0.0",
+    "@semantic-release/npm": "^3.3.1",
     "ansi-colors": "^2.0.1",
     "autoprefixer": "^8.6.2",
     "babel-core": "^6.26.3",
@@ -60,8 +63,19 @@
     }
   },
   "release": {
-    "verifyConditions": ["@semantic-release/changelog", "@semantic-release/npm", "@semantic-release/git"],
-    "prepare": ["@semantic-release/changelog", "@semantic-release/npm", "@semantic-release/git"]
+    "verifyConditions": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "prepare": [
+      {
+        "path": "@semantic-release/changelog",
+        "changelogFile": "CHANGELOG.md"
+      },
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ]
   },
   "files": [
     "dist/**",
