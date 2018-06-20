@@ -75,7 +75,10 @@
       },
       "@semantic-release/npm",
       "@semantic-release/git"
-    ]
+    ],
+    "analyzeCommits": {
+      "preset": "angular"
+    }
   },
   "files": [
     "dist/**",
