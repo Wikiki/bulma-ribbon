@@ -27,9 +27,6 @@
   "homepage": "https://github.com/Wikiki/bulma-ribbon#readme",
   "devDependencies": {
     "@semantic-release/changelog": "^2.0.2",
-    "@semantic-release/git": "^5.0.0",
-    "@semantic-release/github": "^4.2.17",
-    "@semantic-release/npm": "^3.3.1",
     "ansi-colors": "^2.0.1",
     "autoprefixer": "^8.6.2",
     "babel-core": "^6.26.3",
@@ -54,8 +51,6 @@
     "jest": "^23.1.0",
     "regenerator-runtime": "^0.11.1",
     "semantic-release": "^15.5.2",
-    "semantic-release-tamia": "^2.2.4",
-    "tamia-changelog": "^1.0.3",
     "travis-deploy-once": "^5.0.0",
     "webpack": "^4.12.0",
     "webpack-stream": "^4.0.3"
@@ -64,11 +59,6 @@
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
-  },
-  "release": {
-    "analyzeCommits": "semantic-release-tamia/analyzeCommits",
-    "generateNotes": "semantic-release-tamia/generateNotes",
-    "verifyRelease": "semantic-release-tamia/verifyRelease"
   },
   "files": [
     "dist/**",
