@@ -2,7 +2,7 @@
   "name": "bulma-ribbon",
   "version": "2.0.0",
   "description": "Display a ribbon on bulma element",
-  "main": "dist/bulma-ribbon.sass",
+  "main": "dist/css/bulma-ribbon.sass",
   "scripts": {
     "build": "gulp",
     "commit": "git-cz",
