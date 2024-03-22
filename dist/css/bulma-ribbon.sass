@@ -1,14 +1,16 @@
-$ribbon-color: $grey-darker !default
-$ribbon-background-color: $white !default
-$ribbon-border: .1rem solid $grey-lighter !default
+@use "node_modules/bulma/sass/utilities" as utilities
+  
+$ribbon-color: utilities.$grey-darker !default
+$ribbon-background-color: utilities.$white !default
+$ribbon-border: .1rem solid utilities.$grey-lighter !default
 
 // The ribbon sizes use mixins so they can be used at different breakpoints
 =ribbon-small
-  font-size: $size-small
+  font-size: utilities.$size-small
 =ribbon-medium
-  font-size: $size-medium
+  font-size: utilities.$size-medium
 =ribbon-large
-  font-size: $size-large
+  font-size: utilities.$size-large
 
 .has-ribbon
   position: relative
@@ -32,7 +34,7 @@ $ribbon-border: .1rem solid $grey-lighter !default
   border: $ribbon-border
   border-right: none
   color: $ribbon-color
-  font-size: $size-normal
+  font-size: utilities.$size-normal
   justify-content: center
   padding-left: 0.75em
   padding-right: 0.75em
@@ -43,9 +45,11 @@ $ribbon-border: .1rem solid $grey-lighter !default
   right: 0
   font-weight: 400
   z-index: 2
-  @each $name, $pair in $colors
+  @each $name, $pair in utilities.$colors
     $color: nth($pair, 1)
-    $color-invert: nth($pair, 2)
+    $color-invert: utilities.$white
+    @if length($pair) == 2
+      $color-invert: nth($pair, 2)
     &.is-#{$name}:not(.is-outlined)
       background-color: $color
       border-color: transparent
