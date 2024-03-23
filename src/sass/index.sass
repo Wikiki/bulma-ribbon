@@ -1,8 +1,11 @@
+@use "sass:map"
 @use "node_modules/bulma/sass/utilities" as utilities
   
-$ribbon-color: utilities.$grey-darker !default
-$ribbon-background-color: utilities.$white !default
-$ribbon-border: .1rem solid utilities.$grey-lighter !default
+$ribbon-color: var(--bulma-text) !default
+$ribbon-background-color: var(--bulma-background) !default
+$ribbon-border: .1rem solid var(--bulma-background) !default
+
+$colors: ("link", "primary", "info", "success", "warning", "danger")
 
 // The ribbon sizes use mixins so they can be used at different breakpoints
 =ribbon-small
@@ -45,19 +48,15 @@ $ribbon-border: .1rem solid utilities.$grey-lighter !default
   right: 0
   font-weight: 400
   z-index: 2
-  @each $name, $pair in utilities.$colors
-    $color: nth($pair, 1)
-    $color-invert: utilities.$white
-    @if length($pair) == 2
-      $color-invert: nth($pair, 2)
+  @each $name in $colors
     &.is-#{$name}:not(.is-outlined)
-      background-color: $color
+      background-color: var(--bulma-#{$name})
       border-color: transparent
-      color: $color-invert !important
+      color: var(--bulma-#{$name}-invert) !important
     &.is-#{$name}
       &.is-outlined
         background-color: transparent
-        border-color: $color
+        border-color: var(--bulma-#{$name})
 
   // Sizes
   &.is-small
