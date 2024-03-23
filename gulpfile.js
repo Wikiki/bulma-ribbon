@@ -14,7 +14,7 @@ const fs				  = require('fs');
 const log                 = require('fancy-log');
 const nop                  = require('gulp-nop');
 const postcss             = require('gulp-postcss');
-const sass                = require('gulp-sass');
+const sass                = require('gulp-sass')(require('sass'));
 const uglify              = require('gulp-uglify');
 
 /**
@@ -30,7 +30,7 @@ const paths = {
 const config = {
 	sass: {
 		input: 'index.sass',
-		dependencies: ['node_modules/bulma/sass/utilities/_all.sass'],
+		dependencies: ['node_modules/bulma/sass/utilities/_index.scss'],
 		output: {
 			filename: pkg.name,
 			format: 'compressed'
@@ -60,7 +60,7 @@ const config = {
 gulp.task('build:styles', function() {
 	if (fs.existsSync(config.sass.source + config.sass.input)) {
 		return gulp
-			.src(config.sass.dependencies.concat([config.sass.source + config.sass.input]))
+			.src([config.sass.source + config.sass.input])
 			.pipe(concat(config.sass.output.filename + '.sass'))
 			.pipe(sass({
 				style: config.sass.output.format,
